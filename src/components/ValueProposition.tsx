@@ -5,32 +5,32 @@ const features = [
   {
     icon: FlaskConical,
     title: "Custom Formulation Lab",
-    description: "In-house R&D lab to create or adapt formulations to your brand's unique identity. Fully customizable: color, fragrance, texture, composition.",
+    description: "Our in-house R&D team creates or adapts formulations to reflect your brand’s identity, with full control over ingredients, texture, fragrance, and performance.",
   },
   {
     icon: Factory,
     title: "Scalable Manufacturing",
-    description: "State-of-the-art machinery enabling seamless scalability while ensuring precision, uniformity, and strict regulatory compliance.",
+    description: "Advanced manufacturing infrastructure designed to scale efficiently while maintaining precision, consistency, and strict regulatory compliance.",
   },
   {
     icon: Settings,
     title: "Full-Spectrum Services",
-    description: "End-to-end support across sampling, product development, packaging, and logistics with market-aligned recommendations.",
+    description: "Comprehensive support across sampling, product development, packaging, and logistics, guided by market-aligned recommendations.",
   },
   {
     icon: ShieldCheck,
     title: "Stringent Quality Control",
-    description: "Quality standards backed by GMP certification ensuring product safety, efficacy, and regulatory compliance at every stage.",
+    description: "GMP-certified processes ensure product safety, efficacy, and regulatory compliance at every stage of manufacturing.",
   },
   {
     icon: Truck,
     title: "Efficient Delivery",
-    description: "Streamlined operations and reliable logistics ensuring on-time delivery aligned with your go-to-market timelines.",
+    description: "Streamlined operations and reliable logistics aligned to your go-to-market timelines — without delays or surprises.",
   },
   {
     icon: Leaf,
     title: "Sustainable Practices",
-    description: "Committed to environmentally and socially responsible practices throughout our manufacturing process.",
+    description: "Responsible manufacturing practices focused on environmental care, ethical sourcing, and long-term sustainability.",
   },
 ];
 
@@ -53,8 +53,7 @@ const ValueProposition = () => {
             What We Offer
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From concept to delivery, we provide comprehensive private label 
-            manufacturing solutions for the beauty and personal care industry
+          End-to-end private label manufacturing solutions built to support your brand from formulation to market delivery.
           </p>
         </motion.div>
 

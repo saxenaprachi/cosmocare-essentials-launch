@@ -45,8 +45,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Empowering brands with innovative, sustainable, and high-quality cosmetic 
-              and personal care products tailored for diverse skin types and tones.
+              From concept to scale, we help beauty and personal care brands create high-quality, compliant products tailored for diverse skin types and markets.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">

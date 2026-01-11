@@ -23,9 +23,7 @@ const CTASection = () => {
             Ready to Launch Your Brand?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Partner with Cosmocare Essentials and transform your vision into 
-            premium beauty products. From formulation to delivery, we're with you 
-            every step of the way.
+            Partner with Cosmocare Essentials to turn your vision into high-quality beauty and personal care products. <br/>From formulation to delivery, we work alongside you at every step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

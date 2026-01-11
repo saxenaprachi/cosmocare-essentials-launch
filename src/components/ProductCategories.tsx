@@ -10,28 +10,28 @@ const categories = [
   {
     id: "skincare",
     title: "Skin Care",
-    description: "Face creams, serums, moisturizers, and sun protection formulations",
+    description: "Face creams, serums, cleansers, moisturizers, and sun protection formulations developed for efficacy, safety, and consistency across skin types.",
     image: skincare,
     items: ["Face Care", "Serums", "Creams", "SPF Products"],
   },
   {
     id: "haircare",
     title: "Hair Care",
-    description: "Shampoos, conditioners, oils, and styling products",
+    description: "Shampoos, conditioners, oils, masks, and styling solutions formulated for performance, scalp health, and long-term consumer use.",
     image: haircare,
     items: ["Shampoo", "Conditioner", "Hair Oil", "Styling"],
   },
   {
     id: "babycare",
     title: "Baby Care",
-    description: "Gentle formulations designed for delicate baby skin",
+    description: "Gentle, dermatologically considered formulations designed for delicate baby skin, hair, and daily hygiene needs.",
     image: babycare,
     items: ["Baby Lotion", "Shampoo", "Massage Oil", "Bath Products"],
   },
   {
     id: "toiletries",
     title: "Toiletries",
-    description: "Bath, body, and personal hygiene essentials",
+    description: "Essential bath, body, and personal hygiene products manufactured with strict quality and regulatory standards.",
     image: toiletries,
     items: ["Body Wash", "Shower Gel", "Deodorants", "Intimate Care"],
   },
@@ -56,8 +56,7 @@ const ProductCategories = () => {
             Product Categories
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive range of beauty and personal care products, 
-            customizable to match your brand's unique identity
+          A comprehensive range of beauty and personal care products, fully customizable to align with your brand’s formulation, positioning, and market needs.
           </p>
         </motion.div>
 
