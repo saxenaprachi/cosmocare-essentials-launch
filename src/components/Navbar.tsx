@@ -106,7 +106,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="btn-primary text-center mt-2"
                 >
-                  Get in Touch
+                  Get In Touch
                 </Link>
               </div>
             </motion.div>
