@@ -35,7 +35,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 bg-teal-light/60 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Award size={16} className="text-primary" />
-              <span className="text-sm font-medium text-foreground">GMP & ISO Certified What the fuck</span>
+              <span className="text-sm font-medium text-foreground">GMP & ISO Certified</span>
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight mb-6">
