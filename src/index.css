@@ -13,16 +13,16 @@
   :root {
     /* Brand Colors - Clean, Light, Professional */
     --background: 40 33% 98%;
-    --foreground: 210 25% 15%;
+    --foreground: 260 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 25% 15%;
+    --card-foreground: 260 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 25% 15%;
+    --popover-foreground: 260 30% 15%;
 
     /* Teal accent from logo */
-    --primary: 175 40% 40%;
+    --primary: 212 52% 60%;    
     --primary-foreground: 0 0% 100%;
 
     /* Soft cream/beige secondary */
@@ -47,17 +47,17 @@
 
     /* Custom brand tokens */
     --teal: 175 40% 40%;
-    --teal-light: 175 35% 92%;
-    --teal-dark: 175 45% 25%;
+    --teal-light: 200 44% 88%;
+    --teal-dark: 219 44% 57%
     --gold: 40 60% 50%;
     --gold-light: 40 50% 85%;
     --cream: 40 33% 98%;
     --warm-gray: 30 10% 40%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(175 35% 92%) 0%, hsl(40 33% 98%) 50%, hsl(40 50% 95%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(200 44% 57%) 0%, hsl(40 33% 98%) 50%, hsl(40 50% 95%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(40 30% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(175 40% 40%) 0%, hsl(175 45% 50%) 100%);
+    --gradient-accent: linear-gradient(90deg,rgba(102, 168, 219, 1) 0%, rgba(96, 129, 192, 1) 50%, rgba(59, 38, 101, 1) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(40 60% 50%) 0%, hsl(45 70% 60%) 100%);
 
     /* Shadows */
@@ -87,8 +87,8 @@
     --popover: 210 25% 12%;
     --popover-foreground: 40 33% 98%;
 
-    --primary: 175 40% 50%;
-    --primary-foreground: 210 25% 8%;
+    --primary: 212 52% 60%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 18%;
     --secondary-foreground: 40 33% 98%;

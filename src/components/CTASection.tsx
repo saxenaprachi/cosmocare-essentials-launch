@@ -5,7 +5,8 @@ import { ArrowRight } from "lucide-react";
 const CTASection = () => {
   return (
     <section className="section-padding relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-teal-dark to-primary opacity-95" />
+      <div className="absolute inset-0 bg-cosmo-gradient"/>
+      {/* bg-gradient-to-br from-primary via-teal-dark to-primary opacity-99"  */}
       
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />

@@ -39,7 +39,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Cosmocare Essentials"
-              className="h-12 w-auto object-contain"
+              className="h-[4rem] w-auto object-contain"
             />
           </Link>
 

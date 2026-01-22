@@ -104,6 +104,9 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 6s ease-in-out infinite",
       },
+      backgroundImage: {
+        'cosmo-gradient':'linear-gradient(90deg,rgb(50, 107, 151) 0%, rgb(46, 62, 91) 50%, rgba(59, 38, 101, 1) 100%)',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
