@@ -71,12 +71,12 @@ const About = () => {
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-16 bg-gradient-to-b from-teal-light/30 to-background">
-          <div className="container-wide px-4 sm:px-6 lg:px-8">
+          <div className="container-wide px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center max-w-3xl mx-auto"
+              className="text-center max-w-4xl mx-auto"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
                 About Us
@@ -113,9 +113,7 @@ const About = () => {
                   cosmetic and personal care products tailored for diverse skin types and tones.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  We combine cutting-edge formulation science with deep industry expertise 
-                  to help our partners create products that stand out in the competitive 
-                  beauty market.
+                Founded out of a passion for quality and a vision to serve diverse markets, we have grown from a regional manufacturer to a global partner in personal care production. Today, our products and services span key regions including the <strong>Middle East</strong>, <strong>Asia</strong>, <strong>Africa</strong>, <strong>the United States</strong>, and <strong>Europe</strong>.
                 </p>
               </motion.div>
               <motion.div
@@ -133,12 +131,20 @@ const About = () => {
                     </div>
                     <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
                       <p className="font-display text-3xl text-primary mb-2">ISO</p>
-                      <p className="text-sm text-muted-foreground">22716 & 9001</p>
+                      <p className="text-sm text-muted-foreground">9001:2015</p>
                     </div>
-                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center col-span-2">
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
+                      <p className="font-display text-3xl text-primary mb-2">Trade License</p>
+                      <p className="text-sm text-muted-foreground">24548</p>
+                    </div>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
+                      <p className="font-display text-3xl text-primary mb-2">VAT Reg.</p>
+                      <p className="text-sm text-muted-foreground">104535809800003</p>
+                    </div>
+                    {/* <div className="bg-card rounded-2xl p-6 shadow-soft text-center col-span-2">
                       <p className="font-display text-3xl text-primary mb-2">UAE</p>
                       <p className="text-sm text-muted-foreground">Sharjah, SAIF Zone</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </motion.div>
