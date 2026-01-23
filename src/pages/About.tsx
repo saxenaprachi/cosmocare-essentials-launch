@@ -36,6 +36,33 @@ const coreValues = [
     description: "We believe in the power of teamwork and collective success",
   },
 ];
+const Leadership =[
+  {
+    icon: founderImage,
+    name: "Sivakumar Nair",
+    title: "CEO & Managing Director",
+    description: `With over 28 years of experience in the private label cosmetic manufacturing industry, he brings deep technical expertise and strategic leadership to us. He spent 16 years with a leading French cosmetics company in SAIF Zone, UAE, where he played a pivotal role in building the organization from the ground up into a highly profitable manufacturing unit. His knowledge of formulation, operations, and manufacturing forms the backbone of Cosmocare.`,
+  },
+  {
+    icon: founderImage,
+    name: "Mr.Mohammed Shebeeb",
+    title: " ",
+    description: `Mohammed Shebeeb has over 25 years of experience in beauty and personal care product distribution across the Middle East, with a strong presence in multiple international territories. His deep understanding of regional markets, channel partnerships, and brand building enables Cosmocare Essentials to successfully bridge manufacturing excellence with market demand. He plays a key role in expanding the company’s distribution footprint and customer relationships.`,
+  },
+  {
+    icon: founderImage,
+    name: "Mr.Mohamed Jhazan ",
+    title: " ",
+    description: `With 5–6 years of hands-on industry experience, Mohamed Jhazan contributes to the smooth execution of product development and operational coordination. His practical exposure to cosmetic manufacturing processes and industry workflows supports Cosmocare’s agility, efficiency, and responsiveness to client requirements. He is instrumental in ensuring timelines, quality benchmarks, and internal coordination are consistently met.`,
+  },
+  {
+    icon: founderImage,
+    name: "Mrs.Kanakaletha Sivakumar",
+    title: " ",
+    description: `Kanakaletha Sivakumar brings over 20 years of experience in finance and accounts management within the UAE. She previously managed the finance and accounting functions of one of Dubai’s oldest distribution companies, building strong expertise in financial controls, compliance, and operational finance. At Cosmocare Essentials, she ensures robust financial governance, transparency, and sustainable growth.`,
+  },
+
+]
 
 const About = () => {
   return (
@@ -176,42 +203,41 @@ const About = () => {
                 Leadership
               </span>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
-                Our Founder
+                Our Team
               </h2>
             </motion.div>
 
+            {Leadership.map((value, index) => (
             <motion.div
+              key={value.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
+              className="max-w-4xl mx-auto my-8"
             >
-              <div className="bg-card rounded-3xl p-8 lg:p-12 shadow-medium">
+              <div className="bg-card rounded-3xl p-8 lg:p-12 lg:px-8 shadow-medium">
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-48 h-48 rounded-2xl overflow-hidden shrink-0 shadow-soft">
+                  <div className="w-64 h-64 rounded-2xl overflow-hidden shrink-0 shadow-soft">
                     <img
-                      src={founderImage}
+                      src={value.icon}
                       alt="Sivakumar Nair - CEO & Managing Director"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
                     <h3 className="font-display text-2xl text-foreground mb-2">
-                      Sivakumar Nair
+                      {value.name}
                     </h3>
-                    <p className="text-primary font-medium mb-4">CEO & Managing Director</p>
+                    <p className="text-primary font-medium mb-4">{value.title}</p>
                     <p className="text-muted-foreground leading-relaxed">
-                      With extensive experience in the beauty and personal care industry, 
-                      Sivakumar leads Cosmocare Essentials with a vision to deliver 
-                      world-class private label manufacturing solutions. His commitment 
-                      to quality, innovation, and customer satisfaction drives the 
-                      company's growth and success.
+                      {value.description}
                     </p>
                   </div>
                 </div>
               </div>
             </motion.div>
+            ))}
           </div>
         </section>
       </main>
