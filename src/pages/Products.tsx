@@ -8,12 +8,13 @@ import skincare from "@/assets/skincare.jpg";
 import haircare from "@/assets/haircare.jpg";
 import babycare from "@/assets/babycare.jpg";
 import toiletries from "@/assets/toiletries.jpg";
+import CategoryImageCarousel from "@/components/ui/CategoryImageCarousel";
 
 const productCategories = [
   {
     id: "skincare",
     title: "Skin Care",
-    image: skincare,
+    images: [skincare, haircare, babycare],
     description: "Premium skincare formulations for all skin types",
     subcategories: [
       {
@@ -61,7 +62,7 @@ const productCategories = [
   {
     id: "haircare",
     title: "Hair Care",
-    image: haircare,
+    images: [haircare],
     description: "Complete hair care solutions for healthy, beautiful hair",
     subcategories: [
       {
@@ -93,7 +94,7 @@ const productCategories = [
   {
     id: "babycare",
     title: "Baby Care",
-    image: babycare,
+    images: [babycare],
     description: "Gentle, safe products designed for delicate baby skin",
     subcategories: [
       {
@@ -113,7 +114,7 @@ const productCategories = [
   {
     id: "toiletries",
     title: "Toiletries",
-    image: toiletries,
+    images: [toiletries],
     description: "Personal hygiene and bath essentials for everyday use",
     subcategories: [
       {
@@ -213,11 +214,7 @@ const Products = () => {
                   {/* Image */}
                   <div className={`relative lg:sticky lg:top-32 lg:self-start ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <div className="rounded-3xl overflow-hidden shadow-elevated">
-                      <img
-                        src={category.image}
-                        alt={category.title}
-                        className="w-full h-80 lg:h-96 object-cover"
-                      />
+                      <CategoryImageCarousel images={category.images} />
                     </div>
                     <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-light rounded-2xl -z-10" />
                     <div className="absolute -top-4 -left-4 w-16 h-16 bg-gold-light rounded-xl -z-10" />
