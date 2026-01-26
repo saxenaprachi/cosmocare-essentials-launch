@@ -33,7 +33,7 @@ export default function CategoryImageCarousel({ images = [] }: Props) {
               <img
                 src={src}
                 alt="Product category"
-                className="w-full h-80 lg:h-96 object-cover"
+                className="w-full lg:h-[80vh] object-cover"
               />
             </div>
           </CarouselItem>

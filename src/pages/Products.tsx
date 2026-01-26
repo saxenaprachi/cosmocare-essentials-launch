@@ -5,6 +5,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import skincare from "@/assets/skincare.jpg";
+import skincare1 from "@/assets/skincare/skincare1.png";
+import skincare2 from "@/assets/skincare/skincare2.png";
+import skincare3 from "@/assets/skincare/skincare3.png";
+import skincare4 from "@/assets/skincare/skincare4.png";
+import skincare5 from "@/assets/skincare/skincare5.png";
+import skincare6 from "@/assets/skincare/skincare6.png";
+import skincare7 from "@/assets/skincare/skincare7.png";
 import haircare from "@/assets/haircare.jpg";
 import babycare from "@/assets/babycare.jpg";
 import toiletries from "@/assets/toiletries.jpg";
@@ -14,7 +21,7 @@ const productCategories = [
   {
     id: "skincare",
     title: "Skin Care",
-    images: [skincare, haircare, babycare],
+    images: [skincare1, skincare2, skincare3, skincare4, skincare5, skincare6, skincare7],
     description: "Premium skincare formulations for all skin types",
     subcategories: [
       {
