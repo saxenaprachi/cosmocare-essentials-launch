@@ -45,21 +45,21 @@ const Leadership =[
   },
   {
     icon: founderImage,
-    name: "Mr.Mohammed Shebeeb",
-    title: " ",
-    description: `Mohammed Shebeeb has over 25 years of experience in beauty and personal care product distribution across the Middle East, with a strong presence in multiple international territories. His deep understanding of regional markets, channel partnerships, and brand building enables Cosmocare Essentials to successfully bridge manufacturing excellence with market demand. He plays a key role in expanding the company’s distribution footprint and customer relationships.`,
+    name: "Mohammed Shebeeb",
+    title: "Partner ",
+    description: `Shebeeb has over 25 years of experience in beauty and personal care product distribution across the Middle East, with a strong presence in multiple international territories. His deep understanding of regional markets, channel partnerships, and brand building enables Cosmocare Essentials to successfully bridge manufacturing excellence with market demand. He plays a key role in expanding the company’s distribution footprint and customer relationships.`,
   },
   {
     icon: founderImage,
-    name: "Mr.Mohamed Jhazan ",
-    title: " ",
-    description: `With 5–6 years of hands-on industry experience, Mohamed Jhazan contributes to the smooth execution of product development and operational coordination. His practical exposure to cosmetic manufacturing processes and industry workflows supports Cosmocare’s agility, efficiency, and responsiveness to client requirements. He is instrumental in ensuring timelines, quality benchmarks, and internal coordination are consistently met.`,
+    name: "Mohamed Jhazan ",
+    title: "Partner ",
+    description: `With 5–6 years of hands-on industry experience, Jhazan contributes to the smooth execution of product development and operational coordination. His practical exposure to cosmetic manufacturing processes and industry workflows supports Cosmocare’s agility, efficiency, and responsiveness to client requirements. He is instrumental in ensuring timelines, quality benchmarks, and internal coordination are consistently met.`,
   },
   {
     icon: founderImage,
-    name: "Mrs.Kanakaletha Sivakumar",
-    title: " ",
-    description: `Kanakaletha Sivakumar brings over 20 years of experience in finance and accounts management within the UAE. She previously managed the finance and accounting functions of one of Dubai’s oldest distribution companies, building strong expertise in financial controls, compliance, and operational finance. At Cosmocare Essentials, she ensures robust financial governance, transparency, and sustainable growth.`,
+    name: "Kanakaletha Sivakumar",
+    title: "Partner & Finance Director",
+    description: `Kanakaletha brings over 20 years of experience in finance and accounts management within the UAE. She previously managed the finance and accounting functions of one of Dubai’s oldest distribution companies, building strong expertise in financial controls, compliance, and operational finance. At Cosmocare Essentials, she ensures robust financial governance, transparency, and sustainable growth.`,
   },
 
 ]
@@ -125,21 +125,21 @@ const About = () => {
               >
                 <div className="bg-gradient-to-br from-teal-light to-gold-light rounded-3xl p-8 lg:p-12">
                   <div className="grid grid-cols-2 gap-6">
-                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
-                      <p className="font-display text-3xl text-primary mb-2">GMP</p>
-                      <p className="text-sm text-muted-foreground">Certified</p>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center flex align-center items-center flex-col">
+                      <p className="font-display text-xl md:text-3xl text-primary mb-2">GMP</p>
+                      <p className="text-xs md:text-sm text-muted-foreground w-[4rem] md:w-[8rem] break-words">Certified</p>
                     </div>
-                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
-                      <p className="font-display text-3xl text-primary mb-2">ISO</p>
-                      <p className="text-sm text-muted-foreground">9001:2015</p>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center flex align-center items-center flex-col">
+                      <p className="font-display text-xl md:text-3xl text-primary mb-2">ISO</p>
+                      <p className="text-xs md:text-sm text-muted-foreground w-[4rem] md:w-[8rem] break-words">9001:2015</p>
                     </div>
-                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
-                      <p className="font-display text-3xl text-primary mb-2">Trade License</p>
-                      <p className="text-sm text-muted-foreground">24548</p>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center flex align-center items-center flex-col">
+                      <p className="font-display text-xl md:text-3xl text-primary mb-2">Trade License</p>
+                      <p className="text-xs md:text-sm text-muted-foreground w-[4rem] md:w-[8rem] break-words">24548</p>
                     </div>
-                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center">
-                      <p className="font-display text-3xl text-primary mb-2">VAT Reg.</p>
-                      <p className="text-sm text-muted-foreground">104535809800003</p>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft text-center flex align-center items-center flex-col">
+                      <p className="font-display text-xl md:text-3xl text-primary mb-2">VAT Reg.</p>
+                      <p className="text-xs md:text-sm text-muted-foreground w-[4rem] md:w-[8rem] break-words">104535809800003</p>
                     </div>
                     {/* <div className="bg-card rounded-2xl p-6 shadow-soft text-center col-span-2">
                       <p className="font-display text-3xl text-primary mb-2">UAE</p>
