@@ -220,7 +220,7 @@ const Products = () => {
                 <div className={`grid lg:grid-cols-2 gap-12 items-center ${categoryIndex % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   {/* Image */}
                   <div className={`relative lg:sticky lg:top-32 lg:self-start ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <div className="rounded-3xl overflow-hidden shadow-elevated">
+                    <div className="rounded-3xl overflow-hidden shadow-elevated w-fit">
                       <CategoryImageCarousel images={category.images} />
                     </div>
                     <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-light rounded-2xl -z-10" />
