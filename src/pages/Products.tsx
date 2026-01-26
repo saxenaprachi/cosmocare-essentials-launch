@@ -207,11 +207,11 @@ const Products = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
-                className="scroll-mt-32"
+                className="scroll-mt-32 relative"
               >
                 <div className={`grid lg:grid-cols-2 gap-12 items-center ${categoryIndex % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   {/* Image */}
-                  <div className={`relative ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
+                  <div className={`relative lg:sticky lg:top-32 lg:self-start ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <div className="rounded-3xl overflow-hidden shadow-elevated">
                       <img
                         src={category.image}
