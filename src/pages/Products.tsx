@@ -17,20 +17,44 @@ const productCategories = [
     description: "Premium skincare formulations for all skin types",
     subcategories: [
       {
-        name: "Face & Body Care",
-        products: ["Face Wash", "Beard Wash", "Cleanser", "Scrub", "Moisturizing Gel", "Lotion", "Skin Tanner", "Toner", "Lip Balm", "Beard Oil"],
+        name: "Moiturizing Body lotion",
+        products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
+      },
+      {
+        name: "Moisturizing & Refreshing Shower Gel",
+        products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
+      },
+      {
+        name: "Glow White Brightening & Moisturizing Body Cream",
+        products: ["White Musk", "Papaya", "Cocoa Butter", "Licorice Extract"],
+      },
+      {
+        name: "Face & Body Scrub",
+        products: ["Apricot", "Pomegranate", "Turmeric", "Papaya", "Cofee", "Mango", "Watermelon", "Strawberry"],
+      },
+      {
+        name: "Face wash",
+        products: ["Coffee", "Orange", "Papaya", "Charcoal", "Rose"],
       },
       {
         name: "Creams",
-        products: ["Day & Night Cream", "Foot Cream", "Bust Cream", "Glycerin Cream", "Firming Cream", "Brightening Cream", "Dark Spot Whitening Cream"],
+        products: ["Day & Night Cream", "Foot Cream", "Bust Cream", "Glycerin Cream", "Firming Butter Cream", "Brightening Cream", "Dark Spot Whitening Cream"],
       },
       {
         name: "Serums",
-        products: ["Retinol Serum", "Vitamin C Serum", "Brightening Serum", "Anti-Ageing Serum", "Collagen Serum", "Kojic Acid Serum", "AHA/BHA Serum", "Hyaluronic Acid Serum"],
+        products: ["Retinol Serum", "Arbutin & Nicinamide", "Vitamin(Ascorbic acid )", "AHA BHA Peeling solution", "Kojic acid", "Collagen", "Turmeric"],
+      },
+      {
+        name: "Toner",
+        products: ["Glutathion", "Niacinamide", "Propanediol", "Hyaluronic acid", "Lactic acid"],
+      },
+      {
+        name: "Moisturising jelly",
+        products: ["Aloe vera", "Cocoa butter", "Shea butter"],
       },
       {
         name: "Sun Protection",
-        products: ["SPF 30 Cream", "SPF 50 Cream"],
+        products: ["Vitamin C & Hyaluronic acid", "Ceramide & Niacinamide", "Vitamin C & Papaya extract", "Hyaluronic acid & Turmeric extract", "Ceramide & Papaya extract", "Niacinamide, Hyaluronic acid & Vitamin E", "Vitamin C & Vitamin E", "Advanced multi vitamin"],
       },
     ],
   },
@@ -45,12 +69,20 @@ const productCategories = [
         products: ["Shampoo", "Clarifying Shampoo", "Anti-Dandruff Shampoo", "Color Protection Shampoo"],
       },
       {
+        name: "Shampoo",
+        products: ["Tea Tree oil", "Avocado", "Onion", "Argan & White Protien", "Keratin", "Coconut & Rosemary", "Olive Oil", "Amla", "Sulfate free shampoo"],
+      },
+      {
         name: "Hair Conditioning",
-        products: ["Conditioner", "Deep Conditioner", "Leave-in Conditioner", "Hair Mask"],
+        products: ["Conditioner", "Deep Conditioner", "Leave-in Conditioner", "Hair Mask", "Keratin", "Avocado", "Olive Oil", "Argan & Wheat Protien", "Tea Tree Oil", "Coconut Milk"],
       },
       {
         name: "Hair Treatments",
         products: ["Hair Oil", "Hair Serum", "Scalp Treatment", "Hair Growth Solution"],
+      },
+      {
+        name: "Hair Oil",
+        products: ["Amla", "Coconut & Rosemary", "Argan", "Almond"],
       },
       {
         name: "Styling Products",
@@ -91,6 +123,14 @@ const productCategories = [
       {
         name: "Personal Hygiene",
         products: ["Intimate Wash", "Body Mist", "Deodorant Stick", "Anti-Perspirant Roll-on", "Deodorant Gel", "Shaving Gel"],
+      },
+      {
+        name: "Shower Scrub",
+        products: ["Papaya", "Watermelon ", "Lavender", "Strawberry", "Blueberry"],
+      },
+      {
+        name: "Anti perspirant deodorant roll ons",
+        products: ["Hyaluronic acid", "Collagen ", "Backuchiol", "Biotin"],
       },
     ],
   },
