@@ -27,27 +27,6 @@ const ManufacturingPreview = () => {
               entire process predictable and aligned with the quality your brand stands for.
             </p>
             
-            {/* Quick Features */}
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-10 h-10 bg-teal-light rounded-lg">
-                  <FlaskConical size={20} className="text-primary" />
-                </div>
-                <span className="text-foreground font-medium">Bulk Production (300kg - 1500kg MOQ)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-10 h-10 bg-teal-light rounded-lg">
-                  <Package size={20} className="text-primary" />
-                </div>
-                <span className="text-foreground font-medium">Filling & Handling Services</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-10 h-10 bg-teal-light rounded-lg">
-                  <Boxes size={20} className="text-primary" />
-                </div>
-                <span className="text-foreground font-medium">Full Service End-to-End Solutions</span>
-              </div>
-            </div>
 
             <Link
               to="/manufacturing"
