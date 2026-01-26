@@ -21,10 +21,10 @@ const CTASection = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-primary-foreground mb-6">
-            Ready to Launch Your Brand?
+            Ready to Grow Your Personal Care Brand?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Partner with Cosmocare Essentials to turn your vision into high-quality beauty and personal care products. <br/>From formulation to delivery, we work alongside you at every step.
+            Partner with Cosmocare Essentials to develop, refine, and scale high-quality beauty and personal care products. <br/>From formulation to delivery to growth, we work alongside you at every step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
