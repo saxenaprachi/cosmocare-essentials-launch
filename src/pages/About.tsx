@@ -93,7 +93,7 @@ const About = () => {
         </section>
 
         {/* Mission Section */}
-        <section className="section-padding bg-background">
+        <section id="mission" className="section-padding bg-background scroll-mt-32">
           <div className="container-wide">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div
@@ -153,7 +153,7 @@ const About = () => {
         </section>
 
         {/* Values Section */}
-        <section className="section-padding bg-secondary/50">
+        <section id="values" className="section-padding bg-secondary/50 scroll-mt-32">
           <div className="container-wide">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -196,7 +196,7 @@ const About = () => {
         </section>
 
         {/* Founder Section */}
-        <section className="section-padding bg-background">
+        <section id="team" className="section-padding bg-background scroll-mt-32">
           <div className="container-wide">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
