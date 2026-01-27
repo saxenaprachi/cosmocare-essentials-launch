@@ -147,6 +147,25 @@ const Manufacturing = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* MOQ Note */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="mt-10 bg-card rounded-2xl p-6 shadow-soft border-l-4 border-primary"
+            >
+              <h4 className="font-display text-lg text-foreground mb-2">
+                What is MOQ?
+              </h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                <strong className="text-foreground">MOQ (Minimum Order Quantity)</strong> refers to the smallest amount of product 
+                we can produce per order. For bulk production, our MOQ ranges from <strong className="text-primary">300 kg to 1,500 kg</strong>, 
+                depending on the formulation and production model you choose. This ensures cost-efficiency and consistent 
+                quality across every batch.
+              </p>
+            </motion.div>
           </div>
         </section>
 
