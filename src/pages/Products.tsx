@@ -25,7 +25,7 @@ const productCategories = [
     description: "Premium skincare formulations for all skin types",
     subcategories: [
       {
-        name: "Moiturizing Body lotion",
+        name: "Moisturizing Body Lotion",
         products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
       },
       {
@@ -38,10 +38,10 @@ const productCategories = [
       },
       {
         name: "Face & Body Scrub",
-        products: ["Apricot", "Pomegranate", "Turmeric", "Papaya", "Cofee", "Mango", "Watermelon", "Strawberry"],
+        products: ["Apricot", "Pomegranate", "Turmeric", "Papaya", "Coffee", "Mango", "Watermelon", "Strawberry"],
       },
       {
-        name: "Face wash",
+        name: "Face Wash",
         products: ["Coffee", "Orange", "Papaya", "Charcoal", "Rose"],
       },
       {
@@ -50,19 +50,19 @@ const productCategories = [
       },
       {
         name: "Serums",
-        products: ["Retinol Serum", "Arbutin & Nicinamide", "Vitamin(Ascorbic acid )", "AHA BHA Peeling solution", "Kojic acid", "Collagen", "Turmeric"],
+        products: ["Retinol Serum", "Arbutin & Niacinamide", "Vitamin C (Ascorbic Acid)", "AHA BHA Peeling Solution", "Kojic Acid", "Collagen", "Turmeric"],
       },
       {
         name: "Toner",
-        products: ["Glutathion", "Niacinamide", "Propanediol", "Hyaluronic acid", "Lactic acid"],
+        products: ["Glutathione", "Niacinamide", "Propanediol", "Hyaluronic Acid", "Lactic Acid"],
       },
       {
-        name: "Moisturising jelly",
-        products: ["Aloe vera", "Cocoa butter", "Shea butter"],
+        name: "Moisturising Jelly",
+        products: ["Aloe Vera", "Cocoa Butter", "Shea Butter"],
       },
       {
         name: "Sun Protection",
-        products: ["Vitamin C & Hyaluronic acid", "Ceramide & Niacinamide", "Vitamin C & Papaya extract", "Hyaluronic acid & Turmeric extract", "Ceramide & Papaya extract", "Niacinamide, Hyaluronic acid & Vitamin E", "Vitamin C & Vitamin E", "Advanced multi vitamin"],
+        products: ["Vitamin C & Hyaluronic Acid", "Ceramide & Niacinamide", "Vitamin C & Papaya Extract", "Hyaluronic Acid & Turmeric Extract", "Ceramide & Papaya Extract", "Niacinamide, Hyaluronic Acid & Vitamin E", "Vitamin C & Vitamin E", "Advanced Multi Vitamin"],
       },
     ],
   },
@@ -78,11 +78,11 @@ const productCategories = [
       },
       {
         name: "Shampoo",
-        products: ["Tea Tree oil", "Avocado", "Onion", "Argan & White Protien", "Keratin", "Coconut & Rosemary", "Olive Oil", "Amla", "Sulfate free shampoo"],
+        products: ["Tea Tree Oil", "Avocado", "Onion", "Argan & White Protein", "Keratin", "Coconut & Rosemary", "Olive Oil", "Amla", "Sulfate Free Shampoo"],
       },
       {
         name: "Hair Conditioning",
-        products: ["Conditioner", "Deep Conditioner", "Leave-in Conditioner", "Hair Mask", "Keratin", "Avocado", "Olive Oil", "Argan & Wheat Protien", "Tea Tree Oil", "Coconut Milk"],
+        products: ["Conditioner", "Deep Conditioner", "Leave-In Conditioner", "Hair Mask", "Keratin", "Avocado", "Olive Oil", "Argan & Wheat Protein", "Tea Tree Oil", "Coconut Milk"],
       },
       {
         name: "Hair Treatments",
@@ -130,15 +130,15 @@ const productCategories = [
       },
       {
         name: "Personal Hygiene",
-        products: ["Intimate Wash", "Body Mist", "Deodorant Stick", "Anti-Perspirant Roll-on", "Deodorant Gel", "Shaving Gel"],
+        products: ["Intimate Wash", "Body Mist", "Deodorant Stick", "Anti-Perspirant Roll-On", "Deodorant Gel", "Shaving Gel"],
       },
       {
         name: "Shower Scrub",
-        products: ["Papaya", "Watermelon ", "Lavender", "Strawberry", "Blueberry"],
+        products: ["Papaya", "Watermelon", "Lavender", "Strawberry", "Blueberry"],
       },
       {
-        name: "Anti perspirant deodorant roll ons",
-        products: ["Hyaluronic acid", "Collagen ", "Backuchiol", "Biotin"],
+        name: "Anti-Perspirant Deodorant Roll-Ons",
+        products: ["Hyaluronic Acid", "Collagen", "Bakuchiol", "Biotin"],
       },
     ],
   },
