@@ -4,128 +4,151 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
-import CategoryImageCarousel from "@/components/ui/CategoryImageCarousel";
-import { useProductCategories } from "@/hooks/useProductCategories";
-
-// Fallback static imports for categories without database images
+// New professional white-label product images
+import bodyCream1 from "@/assets/products/body-cream-1.jpg";
+import bodyCream2 from "@/assets/products/body-cream-2.jpg";
+import faceScrub1 from "@/assets/products/face-scrub-1.jpg";
+import faceScrub2 from "@/assets/products/face-scrub-2.jpg";
+import faceWash1 from "@/assets/products/face-wash-1.jpg";
+import faceWash2 from "@/assets/products/face-wash-2.jpg";
+import faceWash3 from "@/assets/products/face-wash-3.jpg";
+import sunscreen1 from "@/assets/products/sunscreen-1.jpg";
+import sunscreen2 from "@/assets/products/sunscreen-2.jpg";
+import faceCream1 from "@/assets/products/face-cream-1.jpg";
 import haircare from "@/assets/haircare.jpg";
 import babycare from "@/assets/babycare.jpg";
 import toiletries from "@/assets/toiletries.jpg";
+import CategoryImageCarousel from "@/components/ui/CategoryImageCarousel";
 
-// Static subcategories data (could be moved to database later)
-const subcategoriesData: Record<string, { name: string; products: string[] }[]> = {
-  skincare: [
-    {
-      name: "Moisturizing Body Lotion",
-      products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
-    },
-    {
-      name: "Moisturizing & Refreshing Shower Gel",
-      products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
-    },
-    {
-      name: "Glow White Brightening & Moisturizing Body Cream",
-      products: ["White Musk", "Papaya", "Cocoa Butter", "Licorice Extract"],
-    },
-    {
-      name: "Face & Body Scrub",
-      products: ["Apricot", "Pomegranate", "Turmeric", "Papaya", "Coffee", "Mango", "Watermelon", "Strawberry"],
-    },
-    {
-      name: "Face Wash",
-      products: ["Coffee", "Orange", "Papaya", "Charcoal", "Rose"],
-    },
-    {
-      name: "Creams",
-      products: ["Day & Night Cream", "Foot Cream", "Bust Cream", "Glycerin Cream", "Firming Butter Cream", "Brightening Cream", "Dark Spot Whitening Cream"],
-    },
-    {
-      name: "Serums",
-      products: ["Retinol Serum", "Arbutin & Niacinamide", "Vitamin C (Ascorbic Acid)", "AHA BHA Peeling Solution", "Kojic Acid", "Collagen", "Turmeric"],
-    },
-    {
-      name: "Toner",
-      products: ["Glutathione", "Niacinamide", "Propanediol", "Hyaluronic Acid", "Lactic Acid"],
-    },
-    {
-      name: "Moisturising Jelly",
-      products: ["Aloe Vera", "Cocoa Butter", "Shea Butter"],
-    },
-    {
-      name: "Sun Protection",
-      products: ["Vitamin C & Hyaluronic Acid", "Ceramide & Niacinamide", "Vitamin C & Papaya Extract", "Hyaluronic Acid & Turmeric Extract", "Ceramide & Papaya Extract", "Niacinamide, Hyaluronic Acid & Vitamin E", "Vitamin C & Vitamin E", "Advanced Multi Vitamin"],
-    },
-  ],
-  haircare: [
-    {
-      name: "Hair Cleansing",
-      products: ["Shampoo", "Clarifying Shampoo", "Anti-Dandruff Shampoo", "Color Protection Shampoo"],
-    },
-    {
-      name: "Shampoo",
-      products: ["Tea Tree Oil", "Avocado", "Onion", "Argan & White Protein", "Keratin", "Coconut & Rosemary", "Olive Oil", "Amla", "Sulfate Free Shampoo"],
-    },
-    {
-      name: "Hair Conditioning",
-      products: ["Conditioner", "Deep Conditioner", "Leave-In Conditioner", "Hair Mask", "Keratin", "Avocado", "Olive Oil", "Argan & Wheat Protein", "Tea Tree Oil", "Coconut Milk"],
-    },
-    {
-      name: "Hair Treatments",
-      products: ["Hair Oil", "Hair Serum", "Scalp Treatment", "Hair Growth Solution"],
-    },
-    {
-      name: "Hair Oil",
-      products: ["Amla", "Coconut & Rosemary", "Argan", "Almond"],
-    },
-    {
-      name: "Styling Products",
-      products: ["Hair Gel", "Hair Spray", "Hair Wax", "Mousse"],
-    },
-  ],
-  babycare: [
-    {
-      name: "Baby Skin Care",
-      products: ["Baby Lotion", "Baby Cream", "Baby Massage Oil", "Diaper Rash Cream"],
-    },
-    {
-      name: "Baby Hair Care",
-      products: ["Baby Shampoo", "Baby Conditioner", "Baby Hair Oil"],
-    },
-    {
-      name: "Baby Bath & Hygiene",
-      products: ["Baby Shower Gel", "Baby Bubble Bath", "Baby Body Wash", "Baby Soap"],
-    },
-  ],
-  toiletries: [
-    {
-      name: "Bath & Shower",
-      products: ["Body Wash", "Shower Gel", "Bath Soap", "Exfoliating Scrub", "Bath Bombs"],
-    },
-    {
-      name: "Personal Hygiene",
-      products: ["Intimate Wash", "Body Mist", "Deodorant Stick", "Anti-Perspirant Roll-On", "Deodorant Gel", "Shaving Gel"],
-    },
-    {
-      name: "Shower Scrub",
-      products: ["Papaya", "Watermelon", "Lavender", "Strawberry", "Blueberry"],
-    },
-    {
-      name: "Anti-Perspirant Deodorant Roll-Ons",
-      products: ["Hyaluronic Acid", "Collagen", "Bakuchiol", "Biotin"],
-    },
-  ],
-};
-
-// Fallback images for categories without database images
-const fallbackImages: Record<string, string[]> = {
-  haircare: [haircare],
-  babycare: [babycare],
-  toiletries: [toiletries],
-};
+const productCategories = [
+  {
+    id: "skincare",
+    title: "Skin Care",
+    images: [bodyCream1, bodyCream2, faceScrub1, faceScrub2, faceWash1, faceWash2, faceWash3, sunscreen1, sunscreen2, faceCream1],
+    description: "Premium skincare formulations for all skin types",
+    subcategories: [
+      {
+        name: "Moisturizing Body Lotion",
+        products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
+      },
+      {
+        name: "Moisturizing & Refreshing Shower Gel",
+        products: ["Papaya", "Aloe Vera", "Pomegranate", "Shea Butter", "French Lavender"],
+      },
+      {
+        name: "Glow White Brightening & Moisturizing Body Cream",
+        products: ["White Musk", "Papaya", "Cocoa Butter", "Licorice Extract"],
+      },
+      {
+        name: "Face & Body Scrub",
+        products: ["Apricot", "Pomegranate", "Turmeric", "Papaya", "Coffee", "Mango", "Watermelon", "Strawberry"],
+      },
+      {
+        name: "Face Wash",
+        products: ["Coffee", "Orange", "Papaya", "Charcoal", "Rose"],
+      },
+      {
+        name: "Creams",
+        products: ["Day & Night Cream", "Foot Cream", "Bust Cream", "Glycerin Cream", "Firming Butter Cream", "Brightening Cream", "Dark Spot Whitening Cream"],
+      },
+      {
+        name: "Serums",
+        products: ["Retinol Serum", "Arbutin & Niacinamide", "Vitamin C (Ascorbic Acid)", "AHA BHA Peeling Solution", "Kojic Acid", "Collagen", "Turmeric"],
+      },
+      {
+        name: "Toner",
+        products: ["Glutathione", "Niacinamide", "Propanediol", "Hyaluronic Acid", "Lactic Acid"],
+      },
+      {
+        name: "Moisturising Jelly",
+        products: ["Aloe Vera", "Cocoa Butter", "Shea Butter"],
+      },
+      {
+        name: "Sun Protection",
+        products: ["Vitamin C & Hyaluronic Acid", "Ceramide & Niacinamide", "Vitamin C & Papaya Extract", "Hyaluronic Acid & Turmeric Extract", "Ceramide & Papaya Extract", "Niacinamide, Hyaluronic Acid & Vitamin E", "Vitamin C & Vitamin E", "Advanced Multi Vitamin"],
+      },
+    ],
+  },
+  {
+    id: "haircare",
+    title: "Hair Care",
+    images: [haircare],
+    description: "Complete hair care solutions for healthy, beautiful hair",
+    subcategories: [
+      {
+        name: "Hair Cleansing",
+        products: ["Shampoo", "Clarifying Shampoo", "Anti-Dandruff Shampoo", "Color Protection Shampoo"],
+      },
+      {
+        name: "Shampoo",
+        products: ["Tea Tree Oil", "Avocado", "Onion", "Argan & White Protein", "Keratin", "Coconut & Rosemary", "Olive Oil", "Amla", "Sulfate Free Shampoo"],
+      },
+      {
+        name: "Hair Conditioning",
+        products: ["Conditioner", "Deep Conditioner", "Leave-In Conditioner", "Hair Mask", "Keratin", "Avocado", "Olive Oil", "Argan & Wheat Protein", "Tea Tree Oil", "Coconut Milk"],
+      },
+      {
+        name: "Hair Treatments",
+        products: ["Hair Oil", "Hair Serum", "Scalp Treatment", "Hair Growth Solution"],
+      },
+      {
+        name: "Hair Oil",
+        products: ["Amla", "Coconut & Rosemary", "Argan", "Almond"],
+      },
+      {
+        name: "Styling Products",
+        products: ["Hair Gel", "Hair Spray", "Hair Wax", "Mousse"],
+      },
+    ],
+  },
+  {
+    id: "babycare",
+    title: "Baby Care",
+    images: [babycare],
+    description: "Gentle, safe products designed for delicate baby skin",
+    subcategories: [
+      {
+        name: "Baby Skin Care",
+        products: ["Baby Lotion", "Baby Cream", "Baby Massage Oil", "Diaper Rash Cream"],
+      },
+      {
+        name: "Baby Hair Care",
+        products: ["Baby Shampoo", "Baby Conditioner", "Baby Hair Oil"],
+      },
+      {
+        name: "Baby Bath & Hygiene",
+        products: ["Baby Shower Gel", "Baby Bubble Bath", "Baby Body Wash", "Baby Soap"],
+      },
+    ],
+  },
+  {
+    id: "toiletries",
+    title: "Toiletries",
+    images: [toiletries],
+    description: "Personal hygiene and bath essentials for everyday use",
+    subcategories: [
+      {
+        name: "Bath & Shower",
+        products: ["Body Wash", "Shower Gel", "Bath Soap", "Exfoliating Scrub", "Bath Bombs"],
+      },
+      {
+        name: "Personal Hygiene",
+        products: ["Intimate Wash", "Body Mist", "Deodorant Stick", "Anti-Perspirant Roll-On", "Deodorant Gel", "Shaving Gel"],
+      },
+      {
+        name: "Shower Scrub",
+        products: ["Papaya", "Watermelon", "Lavender", "Strawberry", "Blueberry"],
+      },
+      {
+        name: "Anti-Perspirant Deodorant Roll-Ons",
+        products: ["Hyaluronic Acid", "Collagen", "Bakuchiol", "Biotin"],
+      },
+    ],
+  },
+];
 
 const Products = () => {
   const location = useLocation();
-  const { categories, loading } = useProductCategories();
 
   useEffect(() => {
     if (location.hash) {
@@ -137,13 +160,6 @@ const Products = () => {
       }
     }
   }, [location.hash]);
-
-  // Combine database categories with static subcategories data
-  const productCategories = categories.map((cat) => ({
-    ...cat,
-    images: cat.images.length > 0 ? cat.images : (fallbackImages[cat.slug] || []),
-    subcategories: subcategoriesData[cat.slug] || [],
-  }));
 
   return (
     <div className="min-h-screen">
@@ -178,23 +194,15 @@ const Products = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-wrap justify-center gap-3 mt-10"
             >
-              {loading ? (
-                <div className="animate-pulse flex gap-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="h-10 w-24 bg-muted rounded-full" />
-                  ))}
-                </div>
-              ) : (
-                productCategories.map((cat) => (
-                  <a
-                    key={cat.id}
-                    href={`#${cat.id}`}
-                    className="px-5 py-2.5 bg-card rounded-full shadow-soft text-sm font-medium text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                  >
-                    {cat.title}
-                  </a>
-                ))
-              )}
+              {productCategories.map((cat) => (
+                <a
+                  key={cat.id}
+                  href={`#${cat.id}`}
+                  className="px-5 py-2.5 bg-card rounded-full shadow-soft text-sm font-medium text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                >
+                  {cat.title}
+                </a>
+              ))}
             </motion.div>
           </div>
         </section>
@@ -202,62 +210,56 @@ const Products = () => {
         {/* Product Categories */}
         <section className="section-padding bg-background">
           <div className="container-wide space-y-24">
-            {loading ? (
-              <div className="flex items-center justify-center py-16">
-                <div className="animate-pulse text-muted-foreground">Loading products...</div>
-              </div>
-            ) : (
-              productCategories.map((category, categoryIndex) => (
-                <motion.div
-                  key={category.id}
-                  id={category.id}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 0.6 }}
-                  className="scroll-mt-32 relative"
-                >
-                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${categoryIndex % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                    {/* Image */}
-                    <div className={`relative lg:sticky lg:top-32 lg:self-start ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
-                      <div className="rounded-3xl overflow-hidden shadow-elevated w-fit">
-                        <CategoryImageCarousel images={category.images} />
-                      </div>
-                      <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-light rounded-2xl -z-10" />
-                      <div className="absolute -top-4 -left-4 w-16 h-16 bg-gold-light rounded-xl -z-10" />
+            {productCategories.map((category, categoryIndex) => (
+              <motion.div
+                key={category.id}
+                id={category.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className="scroll-mt-32 relative"
+              >
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${categoryIndex % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                  {/* Image */}
+                  <div className={`relative lg:sticky lg:top-32 lg:self-start ${categoryIndex % 2 === 1 ? 'lg:order-2' : ''}`}>
+                    <div className="rounded-3xl overflow-hidden shadow-elevated w-fit">
+                      <CategoryImageCarousel images={category.images} />
                     </div>
+                    <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-light rounded-2xl -z-10" />
+                    <div className="absolute -top-4 -left-4 w-16 h-16 bg-gold-light rounded-xl -z-10" />
+                  </div>
 
-                    {/* Content */}
-                    <div className={categoryIndex % 2 === 1 ? 'lg:order-1' : ''}>
-                      <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-4">
-                        {category.title}
-                      </h2>
-                      <p className="text-muted-foreground mb-8">
-                        {category.description}
-                      </p>
+                  {/* Content */}
+                  <div className={categoryIndex % 2 === 1 ? 'lg:order-1' : ''}>
+                    <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-4">
+                      {category.title}
+                    </h2>
+                    <p className="text-muted-foreground mb-8">
+                      {category.description}
+                    </p>
 
-                      <div className="space-y-6">
-                        {category.subcategories.map((sub) => (
-                          <div key={sub.name}>
-                            <h4 className="font-medium text-foreground mb-3">{sub.name}</h4>
-                            <div className="flex flex-wrap gap-2">
-                              {sub.products.map((product) => (
-                                <span
-                                  key={product}
-                                  className="text-sm px-4 py-2 bg-secondary rounded-full text-secondary-foreground"
-                                >
-                                  {product}
-                                </span>
-                              ))}
-                            </div>
+                    <div className="space-y-6">
+                      {category.subcategories.map((sub) => (
+                        <div key={sub.name}>
+                          <h4 className="font-medium text-foreground mb-3">{sub.name}</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {sub.products.map((product) => (
+                              <span
+                                key={product}
+                                className="text-sm px-4 py-2 bg-secondary rounded-full text-secondary-foreground"
+                              >
+                                {product}
+                              </span>
+                            ))}
                           </div>
-                        ))}
-                      </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </motion.div>
-              ))
-            )}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </section>
 
