@@ -79,7 +79,7 @@ const About = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-                About Us, HI
+                About Us,
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-foreground mb-6">
                 Empowering Beauty Brands Worldwide

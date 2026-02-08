@@ -5,16 +5,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 // New professional white-label product images
-import bodyCream1 from "@/assets/products/body-cream-1.jpg";
-import bodyCream2 from "@/assets/products/body-cream-2.jpg";
-import faceScrub1 from "@/assets/products/face-scrub-1.jpg";
-import faceScrub2 from "@/assets/products/face-scrub-2.jpg";
-import faceWash1 from "@/assets/products/face-wash-1.jpg";
-import faceWash2 from "@/assets/products/face-wash-2.jpg";
-import faceWash3 from "@/assets/products/face-wash-3.jpg";
-import sunscreen1 from "@/assets/products/sunscreen-1.jpg";
-import sunscreen2 from "@/assets/products/sunscreen-2.jpg";
-import faceCream1 from "@/assets/products/face-cream-1.jpg";
+import skincare1 from "@/assets/skincare/skincare1.png";
+import skincare2 from "@/assets/skincare/skincare2.png";
+import skincare3 from "@/assets/skincare/skincare3.png";
+import skincare4 from "@/assets/skincare/skincare4.png";
+import skincare5 from "@/assets/skincare/skincare5.png";
+import skincare6 from "@/assets/skincare/skincare6.png";
+import skincare7 from "@/assets/skincare/skincare7.png";
 import haircare from "@/assets/haircare.jpg";
 import babycare from "@/assets/babycare.jpg";
 import toiletries from "@/assets/toiletries.jpg";
@@ -24,7 +21,7 @@ const productCategories = [
   {
     id: "skincare",
     title: "Skin Care",
-    images: [bodyCream1, bodyCream2, faceScrub1, faceScrub2, faceWash1, faceWash2, faceWash3, sunscreen1, sunscreen2, faceCream1],
+    images: [skincare1, skincare2, skincare3, skincare4, skincare5, skincare6, skincare7],
     description: "Premium skincare formulations for all skin types",
     subcategories: [
       {
