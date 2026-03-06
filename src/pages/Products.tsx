@@ -101,7 +101,7 @@ const productCategories = [
   {
     id: "babycare",
     title: "Baby Care",
-    images: [babycare],
+    images: [babycare, skincare4],
     description: "Gentle, safe products designed for delicate baby skin",
     subcategories: [
       {
@@ -121,7 +121,7 @@ const productCategories = [
   {
     id: "toiletries",
     title: "Toiletries",
-    images: [toiletries],
+    images: [toiletries, skincare2, skincare5, skincare1, skincare3, skincare6],
     description: "Personal hygiene and bath essentials for everyday use",
     subcategories: [
       {
