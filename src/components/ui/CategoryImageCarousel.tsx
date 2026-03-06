@@ -29,11 +29,11 @@ export default function CategoryImageCarousel({ images = [] }: Props) {
       <CarouselContent>
         {images.map((src, index) => (
           <CarouselItem key={index}>
-            <div className="overflow-hidden rounded-3xl shadow-elevated">
+            <div className="overflow-hidden rounded-3xl shadow-elevated aspect-[4/3] sm:aspect-[3/2] lg:aspect-[16/9]">
               <img
                 src={src}
                 alt="Product category"
-                className="w-full lg:h-[80vh] object-cover"
+                className="w-full h-full object-contain bg-muted/20"
               />
             </div>
           </CarouselItem>
