@@ -72,7 +72,7 @@ const productCategories = [
   {
     id: "haircare",
     title: "Hair Care",
-    images: [haircare],
+    images: [haircare, arganShampoo, coconutShampoo, showerGel],
     description: "Complete hair care solutions for healthy, beautiful hair",
     subcategories: [
       {
